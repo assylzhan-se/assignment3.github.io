@@ -1,0 +1,31 @@
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.gallery-item img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.gallery-item span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.gallery-item span:hover{
+    opacity: 1;
+}
