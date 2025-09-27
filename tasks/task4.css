@@ -1,0 +1,58 @@
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-card {
+  background: #ecf0f1;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.info {
+  background: #bdc3c7;
+  padding: 15px;
+  border-radius: 10px;
+}
+.footer {
+  text-align: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  margin-top: 180px;
+}
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+}
+.portfolio-header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.portfolio-nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.portfolio-nav a:hover {
+  text-decoration: underline;
+}
+
